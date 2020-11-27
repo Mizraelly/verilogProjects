@@ -1,0 +1,44 @@
+# Reading pref.tcl
+# do sim1.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# 
+# vlib work
+# vlog  stateMacSix.v stateMacSix_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:55:56 on Nov 08,2020
+# vlog -reportprogress 300 stateMacSix.v stateMacSix_tb.v 
+# -- Compiling module stateMacSix
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 22:55:56 on Nov 08,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ns -voptargs=+acc testbench
+# vsim -t 1ns -voptargs="+acc" testbench 
+# Start time: 22:55:56 on Nov 08,2020
+# Loading work.testbench
+# Loading work.stateMacSix
+# 
+# add wave /testbench/clk
+# add wave /testbench/reset
+# add wave /testbench/w
+# add wave /testbench/statemac/state
+# add wave /testbench/out
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : stateMacSix_tb.v(29)
+#    Time: 1 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at stateMacSix_tb.v line 29
+# wave zoom full
+# 0 ns
+# 1050 ns
+# End time: 22:57:14 on Nov 08,2020, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 0

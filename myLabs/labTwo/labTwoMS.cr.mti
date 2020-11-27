@@ -1,0 +1,29 @@
+E:/3sem/verilog/labTwo/NotMinimizLogic.v {1 {vlog -work work -stats=none E:/3sem/verilog/labTwo/NotMinimizLogic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module NotMinimizLogic
+
+Top level modules:
+	NotMinimizLogic
+
+} {} {}} E:/3sem/verilog/labTwo/ExclusiveOR.v {1 {vlog -work work -stats=none E:/3sem/verilog/labTwo/ExclusiveOR.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ExclusiveOR
+
+Top level modules:
+	ExclusiveOR
+
+} {} {}} E:/3sem/verilog/labTwo/VarTwo.v {1 {vlog -work work -stats=none E:/3sem/verilog/labTwo/VarTwo.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module VarTwo
+
+Top level modules:
+	VarTwo
+
+} {} {}} E:/3sem/verilog/labTwo/MinimizLogic.v {1 {vlog -work work -stats=none E:/3sem/verilog/labTwo/MinimizLogic.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MinimizLogic
+
+Top level modules:
+	MinimizLogic
+
+} {} {}}

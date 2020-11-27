@@ -1,0 +1,12 @@
+restart -force;
+force x[-5] 2#1 0ns, 2#0 50ns;
+force x[-4] 2#0 0ns, 2#1 50ns, 2#0 100ns;
+force x[-3] 2#0 0ns, 2#1 100ns, 2#0 150ns;
+force x[-2] 2#0 0ns, 2#1 150ns, 2#0 200ns;
+force x[-1] 2#0 0ns, 2#1 200ns, 2#0 250ns;
+force x[0] 2#0 0ns, 2#1 250ns, 2#0 300ns;
+force x[1] 2#0 0ns, 2#1 300ns, 2#0 350ns;
+force x[2] 2#0 0ns, 2#1 350ns, 2#0 400ns;
+force x[3] 2#0 0ns, 2#1 400ns, 2#0 450ns;
+force x[4] 2#0 0ns, 2#1 450ns, 2#0 500ns;
+run 550ns;

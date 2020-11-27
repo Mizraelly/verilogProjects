@@ -1,0 +1,3 @@
+module coder (input [-5:4]x, output [3:0]Q);
+assign q[0] = x[-4] & x[-3];
+endmodule;
