@@ -8,14 +8,14 @@ reg [4:0] count_data_reg;
 reg [7:0] data_reg [31:0];
 reg [6:0] sck_gen;
 reg [2:0] sync_reg_miso_ff;
-reg [2:0] sync_reg_sck_ff,sync_reg_cs_ff;
+reg [1:0] sync_reg_sck_ff,sync_reg_cs_ff;
 wire sck_detect,cs_detect,out_sck_gen;
 
 parameter PERIOD = 20;
 reg en;
 				
-assign sck_detect = ~sync_reg_sck_ff[2] & sync_reg_sck_ff[1]; //detect rise front SCK
-assign cs_detect = ~sync_reg_cs_ff[2] & sync_reg_cs_ff[1];	//detect rise front CS
+assign sck_detect = ~sync_reg_sck_ff[1] & sync_reg_sck_ff[0]; //detect rise front SCK
+assign cs_detect = ~sync_reg_cs_ff[1] & sync_reg_cs_ff[0];	//detect rise front CS
 
 assign o_en = en;
 assign out_sck_gen = sck_gen[6];
@@ -65,18 +65,18 @@ end
 always @(posedge i_clk or negedge i_rst_n) begin 				//double flopping sck
 	if (~i_rst_n) begin
 		// reset
-		sync_reg_sck_ff <= 3'd0;
+		sync_reg_sck_ff <= 2'd0;
 	end	else begin
-		sync_reg_sck_ff <= {sync_reg_sck_ff[1:0],out_sck_gen};
+		sync_reg_sck_ff <= {sync_reg_sck_ff[0],out_sck_gen};
 	end
 end
 
 always @(posedge i_clk or negedge i_rst_n) begin 				//double flopping chip select
 	if (~i_rst_n) begin
 		// reset
-		sync_reg_cs_ff <= 3'b111;
+		sync_reg_cs_ff <= 2'b11;
 	end	else begin
-		sync_reg_cs_ff <= {sync_reg_cs_ff[1:0],en};
+		sync_reg_cs_ff <= {sync_reg_cs_ff[0],en};
 	end
 end
 
@@ -104,7 +104,8 @@ always @(posedge i_clk or negedge i_rst_n)begin 				//descript counter for data_
 	else if(cs_detect) count_data_reg <= count_data_reg + 1'b1;
 end
 
-always @(posedge i_clk) begin 			  	//write data in data_reg
-	 if(cs_detect) data_reg[count_data_reg] <= shift_reg_miso;
+always @(posedge i_clk or negedge i_rst_n) begin 			  	//write data in data_reg
+	if(~i_rst_n) data_reg[7:0][31:0] <= 0;
+	else if(cs_detect) data_reg[count_data_reg] <= shift_reg_miso;
 end
 endmodule
