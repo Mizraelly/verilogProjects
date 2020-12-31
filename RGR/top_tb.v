@@ -10,10 +10,6 @@ top top1(clk,rst_n,en,miso,mosi);
 initial begin
 	rst_n = 0;
 	#2 rst_n = 1;
-	forever #(PERIOD * 1000000) begin
-		rst_n = 0;
-		#2 rst_n = 1;
-	end
 end
 
 initial begin
@@ -22,5 +18,5 @@ initial begin
 end
 
 
-initial #250000 $finish;
+initial #40000000 $finish;
 endmodule

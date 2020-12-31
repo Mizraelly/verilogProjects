@@ -5,7 +5,7 @@ if { [file exists "work"] } {
 
 vlib work
 
-vlog AU.v CU.v uMac.v uMac_tb.v
+vlog AU.v CU.v uMac.v uMac_tb.v 
 
 vsim -t 1ns -voptargs="+acc" testbench
 

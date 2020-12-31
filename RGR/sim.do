@@ -5,7 +5,7 @@ if { [file exists "work"] } {
 
 vlib work
 
-vlog stateMac.v master.v top.v count.v slave.v top_tb.v
+vlog stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v
 
 vsim -t 1ns -voptargs="+acc" testbench
 
@@ -27,6 +27,7 @@ add wave /testbench/top1/slave1/MAC1/o_inc_reg
 
 #counter.......................................................
 add wave -radix unsigned /testbench/top1/slave1/count1/counter
+add wave  /testbench/top1/slave1/count1/i_rst_mac
 
 #slave register................................................
 add wave -radix unsigned /testbench/top1/slave1/par_reg1
@@ -52,23 +53,16 @@ add wave /testbench/top1/master1/o_mosi
 add wave /testbench/top1/master1/sck_detect
 add wave -radix ASCII /testbench/top1/master1/shift_reg_miso
 add wave -radix unsigned /testbench/top1/master1/shift_reg_mosi
-add wave -radix unsigned /testbench/top1/master1/addr
 add wave -radix ASCII /testbench/top1/master1/data_reg
 
 add wave  /testbench/top1/master1/sync_reg_miso_ff
-add wave  /testbench/top1/master1/counter_sck
-
-add wave -radix unsigned /testbench/top1/master1/sck_gen
-add wave -radix unsigned /testbench/top1/master1/out_sck_gen
-
-
-
 
 add wave /testbench/top1/slave1/shift_reg_miso
 
 add wave /testbench/top1/master1/shift_reg_miso
 add wave /testbench/top1/master1/sync_reg_miso_ff
-
+add wave /testbench/top1/master1/*
+add wave /testbench/top1/master1/Mac/*
 onbreak resume
 run -all
 

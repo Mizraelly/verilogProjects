@@ -1,0 +1,167 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/3sem/verilog/verilogProjects/rgrSPI
+vcount
+Z1 !s110 1608393736
+!i10b 1
+!s100 k5gXWROjFmgD94@^:0:m20
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>]n6@LYUN_3gfNIXG[2jg0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1607939367
+8count.v
+Fcount.v
+!i122 0
+L0 1 18
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1608393736.000000
+!s107 top_tb.v|slave.v|count.v|top.v|master.v|stateMacSCK.v|stateMac.v|
+Z6 !s90 -reportprogress|300|stateMac.v|stateMacSCK.v|master.v|top.v|count.v|slave.v|top_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vmaster
+R1
+!i10b 1
+!s100 IhD0c7I:?>n1NGGVBK7aH0
+R2
+IVZVSlXNd=aF1C;jOHh[=e0
+R3
+R0
+w1607951368
+8master.v
+Fmaster.v
+!i122 0
+L0 2 130
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 top_tb.v|slave.v|count.v|top.v|master.v|stateMacSCK.v|stateMac.v|
+R6
+!i113 1
+R7
+vslave
+R1
+!i10b 1
+!s100 ZN`YN:GfBZGhzd_0NF<?J1
+R2
+IEzYilR<;aJ]?Y;cPB4KPl3
+R3
+R0
+w1607939972
+8slave.v
+Fslave.v
+!i122 0
+L0 1 70
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vstateMac
+R1
+!i10b 1
+!s100 2RM3TWBDKM2UMC5h[nHZM1
+R2
+Im@bdg4okJhJ^2S9;0iTdI3
+R3
+R0
+w1607893451
+8stateMac.v
+FstateMac.v
+!i122 0
+L0 1 105
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nstate@mac
+vstateMacSCK
+R1
+!i10b 1
+!s100 2JzDlMYlPg9cBXOUN_1LG1
+R2
+IP5QfV@P_US:1TWnI?F[Fg3
+R3
+R0
+w1607951221
+8stateMacSCK.v
+FstateMacSCK.v
+!i122 0
+L0 1 138
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nstate@mac@s@c@k
+vtestbench
+R1
+!i10b 1
+!s100 WB8BVonO6Xm]6V_;BUl>>0
+R2
+IR:ck5YbX3E`g]3Tjh>lzn3
+R3
+R0
+w1608393732
+8top_tb.v
+Ftop_tb.v
+!i122 0
+L0 2 21
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+vtop
+R1
+!i10b 1
+!s100 lEGdLB`WRBIR1:FIh:0Ti2
+R2
+IoN^:C<e8O<fT^ID?AEd6R1
+R3
+R0
+w1606497335
+8top.v
+Ftop.v
+!i122 0
+L0 1 13
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7

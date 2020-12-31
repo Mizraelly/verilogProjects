@@ -15,7 +15,13 @@ wire wr_par_reg,wr_wd_to_par_reg,wr_wd_to_sh,en_sh_reg,inc_reg,en_miso,en_cnt,re
 
 assign o_miso = en_miso ? shift_reg_miso[7] : 1'bz;
 
-count count1(sck_detect,i_rst_n,res_cnt,en_cnt,count_f);
+count count1(.i_clk(i_clk),
+			 .sck_detect(sck_detect),
+			 .i_rst_n(i_rst_n),
+			 .i_rst_mac(res_cnt),
+			 .i_en(en_cnt),
+			 .o_cnt_f(count_f) );
+
 stateMac MAC1(i_clk,sck_detect,i_rst_n,cs_detect,count_f,wr_par_reg,wr_wd_to_sh,en_sh_reg,inc_reg,en_miso,en_cnt,res_cnt);
 
 initial $readmemh("romASCII.hex",ascii_word_rom);
@@ -58,8 +64,7 @@ end
 always @(posedge i_clk or negedge i_rst_n) begin 				//descript shift register MISO
 	if(~i_rst_n) shift_reg_miso <= 8'd0;
 	else if (wr_wd_to_sh) shift_reg_miso <= ascii_word_rom[par_reg1[7:0]];
-	else if (en_sh_reg) 
-	if(sck_detect)	shift_reg_miso <= {shift_reg_miso[6:0],0};
+	else if (en_sh_reg & sck_detect)shift_reg_miso <= {shift_reg_miso[6:0],1'b0};
 end
 
 endmodule
