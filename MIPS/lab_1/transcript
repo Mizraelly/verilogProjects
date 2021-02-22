@@ -1,0 +1,91 @@
+# Reading pref.tcl
+# do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  pc.v regFile.v shiftLeftBy2.v signExtend.v mux2in1.v lab1_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 17:57:40 on Feb 22,2021
+# vlog -reportprogress 300 pc.v regFile.v shiftLeftBy2.v signExtend.v mux2in1.v lab1_tb.v 
+# -- Compiling module pc
+# -- Compiling module regFile
+# -- Compiling module shiftLeftBy2
+# -- Compiling module signExtend
+# -- Compiling module mux2in1
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 17:57:40 on Feb 22,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 17:57:40 on Feb 22,2021
+# Loading work.testbench
+# Loading work.mux2in1
+# Loading work.signExtend
+# Loading work.pc
+# Loading work.shiftLeftBy2
+# Loading work.regFile
+#def clk
+# add wave testbench/clk
+# 
+#def wave for test mux2in1
+# 
+# add wave -radix unsigned /testbench/dat0
+# add wave -radix unsigned /testbench/dat1
+# add wave -radix unsigned /testbench/control
+# add wave -radix unsigned /testbench/odat
+# 
+#def wave for test regFile
+# 
+# 
+#def wave for test shiftLeftBy2
+# 
+# 
+#def wave for test signExtend
+# add wave /testbench/iDatSignEx
+# add wave /testbench/SignExEn
+# add wave /testbench/oDatSignEx
+# 
+#def wave for test PC
+# add wave /testbench/i_rst_n_pc
+# add wave -radix unsigned /testbench/in_pc
+# add wave -radix unsigned /testbench/out_pc
+# 
+#def wave for test shiftLeftBy2
+# add wave /testbench/i_data_shift_by_2
+# add wave /testbench/o_data_shift_by_2
+# 
+#def wave for test regFile
+# add wave -radix unsigned /testbench/i_raddr1_reg
+# add wave -radix unsigned /testbench/i_raddr2_reg
+# add wave -radix unsigned /testbench/i_waddr_reg
+# add wave -radix unsigned /testbench/i_wdata_reg
+# add wave /testbench/i_we_reg
+# add wave -radix unsigned /testbench/regFile/register
+# add wave -radix unsigned /testbench/o_rdata1_reg
+# add wave -radix unsigned /testbench/o_rdata2_reg
+# 
+#def clk
+# add wave testbench/clk
+# 
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab1_tb.v(148)
+#    Time: 1 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab1_tb.v line 148
+# 
+# wave zoom full
+# 0 ns
+# 1050 ns
+# 
+# 
+# End time: 17:59:05 on Feb 22,2021, Elapsed time: 0:01:25
+# Errors: 0, Warnings: 0
