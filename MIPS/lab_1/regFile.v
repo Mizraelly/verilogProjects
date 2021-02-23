@@ -16,7 +16,7 @@ output reg  [31:0]  o_rdata1, o_rdata2;
 reg [31:0] register [31:0];
 
 always @(posedge i_clk) begin
-	if(i_we) begin
+	if(i_we && i_waddr != 32'd0) begin
 		register [i_waddr] <= i_wdata;
 	end
 end
@@ -25,4 +25,6 @@ always @(posedge i_clk) begin
 		o_rdata1 <= register[i_raddr1];
 		o_rdata2 <= register[i_raddr2];
 end
+
+initial $readmemh ("reg.hex",register);
 endmodule

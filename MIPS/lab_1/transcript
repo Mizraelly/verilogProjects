@@ -7,7 +7,7 @@
 # vlib work
 # vlog  pc.v regFile.v shiftLeftBy2.v signExtend.v mux2in1.v lab1_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:57:40 on Feb 22,2021
+# Start time: 13:30:45 on Feb 23,2021
 # vlog -reportprogress 300 pc.v regFile.v shiftLeftBy2.v signExtend.v mux2in1.v lab1_tb.v 
 # -- Compiling module pc
 # -- Compiling module regFile
@@ -18,11 +18,11 @@
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:57:40 on Feb 22,2021, Elapsed time: 0:00:00
+# End time: 13:30:45 on Feb 23,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -t 1ns -voptargs="+acc" testbench
 # vsim -t 1ns -voptargs=""+acc"" testbench 
-# Start time: 17:57:40 on Feb 22,2021
+# Start time: 13:30:45 on Feb 23,2021
 # Loading work.testbench
 # Loading work.mux2in1
 # Loading work.signExtend
@@ -87,5 +87,5 @@
 # 1050 ns
 # 
 # 
-# End time: 17:59:05 on Feb 22,2021, Elapsed time: 0:01:25
+# End time: 13:32:20 on Feb 23,2021, Elapsed time: 0:01:35
 # Errors: 0, Warnings: 0
