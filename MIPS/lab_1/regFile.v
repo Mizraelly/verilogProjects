@@ -26,5 +26,5 @@ always @(posedge i_clk) begin
 		o_rdata2 <= register[i_raddr2];
 end
 
-initial $readmemh ("reg.hex",register);
+initial $readmemh ("GPR_init.hex",register);
 endmodule
