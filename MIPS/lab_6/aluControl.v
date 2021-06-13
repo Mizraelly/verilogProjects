@@ -5,7 +5,7 @@ input       [5:0]   i_func;
 output  reg [3:0]   o_aluControl;
 
 localparam AND = 4'b0000, OR = 4'b0001, ADD = 4'b0010 , SLL = 4'b1000;
-localparam SUB = 4'b0110, SOLT = 4'b0111, NOR = 4'b1100;
+localparam SUB = 4'b0110, SOLT = 4'b0111, NOR = 4'b1100, SRL = 4'b1111;
 
 
 always@(*)begin
@@ -21,6 +21,7 @@ always@(*)begin
 			6'h27: o_aluControl = NOR;
 			6'h2A: o_aluControl = SOLT;
 			6'h00: o_aluControl = SLL;
+			6'h02: o_aluControl = SRL;
 		endcase // i_func
 		end
 	endcase // i_aluOp

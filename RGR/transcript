@@ -1,5 +1,4 @@
 # Reading pref.tcl
-# ERROR: No extended dataflow license exists
 # do sim.do
 # if { [file exists "work"] } {
 #     vdel -all
@@ -9,7 +8,7 @@
 # 
 # vlog stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 17:57:19 on Dec 19,2020
+# Start time: 11:37:05 on May 18,2021
 # vlog -reportprogress 300 stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v 
 # -- Compiling module stateMac
 # -- Compiling module stateMacSCK
@@ -21,12 +20,12 @@
 # 
 # Top level modules:
 # 	testbench
-# End time: 17:57:20 on Dec 19,2020, Elapsed time: 0:00:01
+# End time: 11:37:05 on May 18,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ns -voptargs="+acc" testbench
 # vsim -t 1ns -voptargs=""+acc"" testbench 
-# Start time: 17:57:20 on Dec 19,2020
+# Start time: 11:37:05 on May 18,2021
 # Loading work.testbench
 # Loading work.top
 # Loading work.master
@@ -34,213 +33,6 @@
 # Loading work.slave
 # Loading work.count
 # Loading work.stateMac
-# 
-# add wave /testbench/clk
-# add wave /testbench/rst_n
-# add wave /testbench/en
-# add wave /testbench/mosi
-# add wave /testbench/miso
-# 
-#state mac.....................................................
-# add wave -radix unsigned /testbench/top1/slave1/MAC1/state
-# add wave /testbench/top1/slave1/MAC1/o_en_write_par_reg
-# add wave /testbench/top1/slave1/MAC1/o_en_write_word_to_shreg
-# add wave /testbench/top1/slave1/MAC1/o_en_shift_reg
-# add wave /testbench/top1/slave1/MAC1/o_en_miso
-# add wave /testbench/top1/slave1/MAC1/o_en_count
-# add wave /testbench/top1/slave1/MAC1/o_res_count
-# add wave /testbench/top1/slave1/MAC1/o_inc_reg
-# 
-#counter.......................................................
-# add wave -radix unsigned /testbench/top1/slave1/count1/counter
-# add wave  /testbench/top1/slave1/count1/i_rst_mac
-# 
-#slave register................................................
-# add wave -radix unsigned /testbench/top1/slave1/par_reg1
-# add wave -radix unsigned /testbench/top1/slave1/shift_reg_mosi
-# add wave -radix ASCII /testbench/top1/slave1/shift_reg_miso
-# add wave /testbench/top1/slave1/syn_reg_sck_ff
-# add wave /testbench/top1/slave1/syn_reg_cs_ff
-# 
-#front detector slave..........................................
-# add wave /testbench/top1/slave1/sck_detect
-# add wave /testbench/top1/slave1/cs_detect
-# 
-#master port...................................................
-# add wave /testbench/top1/master1/i_rst_n
-# add wave /testbench/top1/master1/i_clk
-# add wave /testbench/top1/master1/o_sck
-# add wave /testbench/top1/master1/o_en
-# add wave /testbench/top1/master1/i_miso
-# add wave /testbench/top1/master1/o_mosi
-# 
-# 
-#master register...............................................
-# add wave /testbench/top1/master1/sck_detect
-# add wave -radix ASCII /testbench/top1/master1/shift_reg_miso
-# add wave -radix unsigned /testbench/top1/master1/shift_reg_mosi
-# add wave -radix ASCII /testbench/top1/master1/data_reg
-# 
-# add wave  /testbench/top1/master1/sync_reg_miso_ff
-# 
-# add wave /testbench/top1/slave1/shift_reg_miso
-# 
-# add wave /testbench/top1/master1/shift_reg_miso
-# add wave /testbench/top1/master1/sync_reg_miso_ff
-# add wave /testbench/top1/master1/*
-# add wave /testbench/top1/master1/Mac/*
-# onbreak resume
-# run -all
-# ** Note: $finish    : top_tb.v(21)
-#    Time: 30 ms  Iteration: 0  Instance: /testbench
-# 1
-# Break in Module testbench at top_tb.v line 21
-# 
-# configure wave -timelineunits ns
-# wave zoom full
-# 0 ns
-# 31500 us
-do sim.do
-# if { [file exists "work"] } {
-#     vdel -all
-# }
-# Error 31: Unable to unlink file "E:/3sem/verilog/verilogProjects/rgrSPI/work/_lib.qdb".
-# Error 133: Unable to remove directory "E:/3sem/verilog/verilogProjects/rgrSPI/work".
-# 
-# vlib work
-# 
-# vlog stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:00:14 on Dec 19,2020
-# vlog -reportprogress 300 stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v 
-# -- Compiling module stateMac
-# -- Compiling module stateMacSCK
-# -- Compiling module master
-# -- Compiling module top
-# -- Compiling module count
-# -- Compiling module slave
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# End time: 18:00:15 on Dec 19,2020, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ns -voptargs="+acc" testbench
-# End time: 18:00:16 on Dec 19,2020, Elapsed time: 0:02:56
-# Errors: 0, Warnings: 0
-# vsim -t 1ns -voptargs=""+acc"" testbench 
-# Start time: 18:00:16 on Dec 19,2020
-# Loading work.testbench
-# Loading work.top
-# Loading work.master
-# Loading work.stateMacSCK
-# Loading work.slave
-# Loading work.count
-# Loading work.stateMac
-# 
-# add wave /testbench/clk
-# add wave /testbench/rst_n
-# add wave /testbench/en
-# add wave /testbench/mosi
-# add wave /testbench/miso
-# 
-#state mac.....................................................
-# add wave -radix unsigned /testbench/top1/slave1/MAC1/state
-# add wave /testbench/top1/slave1/MAC1/o_en_write_par_reg
-# add wave /testbench/top1/slave1/MAC1/o_en_write_word_to_shreg
-# add wave /testbench/top1/slave1/MAC1/o_en_shift_reg
-# add wave /testbench/top1/slave1/MAC1/o_en_miso
-# add wave /testbench/top1/slave1/MAC1/o_en_count
-# add wave /testbench/top1/slave1/MAC1/o_res_count
-# add wave /testbench/top1/slave1/MAC1/o_inc_reg
-# 
-#counter.......................................................
-# add wave -radix unsigned /testbench/top1/slave1/count1/counter
-# add wave  /testbench/top1/slave1/count1/i_rst_mac
-# 
-#slave register................................................
-# add wave -radix unsigned /testbench/top1/slave1/par_reg1
-# add wave -radix unsigned /testbench/top1/slave1/shift_reg_mosi
-# add wave -radix ASCII /testbench/top1/slave1/shift_reg_miso
-# add wave /testbench/top1/slave1/syn_reg_sck_ff
-# add wave /testbench/top1/slave1/syn_reg_cs_ff
-# 
-#front detector slave..........................................
-# add wave /testbench/top1/slave1/sck_detect
-# add wave /testbench/top1/slave1/cs_detect
-# 
-#master port...................................................
-# add wave /testbench/top1/master1/i_rst_n
-# add wave /testbench/top1/master1/i_clk
-# add wave /testbench/top1/master1/o_sck
-# add wave /testbench/top1/master1/o_en
-# add wave /testbench/top1/master1/i_miso
-# add wave /testbench/top1/master1/o_mosi
-# 
-# 
-#master register...............................................
-# add wave /testbench/top1/master1/sck_detect
-# add wave -radix ASCII /testbench/top1/master1/shift_reg_miso
-# add wave -radix unsigned /testbench/top1/master1/shift_reg_mosi
-# add wave -radix ASCII /testbench/top1/master1/data_reg
-# 
-# add wave  /testbench/top1/master1/sync_reg_miso_ff
-# 
-# add wave /testbench/top1/slave1/shift_reg_miso
-# 
-# add wave /testbench/top1/master1/shift_reg_miso
-# add wave /testbench/top1/master1/sync_reg_miso_ff
-# add wave /testbench/top1/master1/*
-# add wave /testbench/top1/master1/Mac/*
-# onbreak resume
-# run -all
-# ** Note: $finish    : top_tb.v(21)
-#    Time: 30 ms  Iteration: 0  Instance: /testbench
-# 1
-# Break in Module testbench at top_tb.v line 21
-# 
-# configure wave -timelineunits ns
-# wave zoom full
-# 0 ns
-# 31500 us
-do sim.do
-# if { [file exists "work"] } {
-#     vdel -all
-# }
-# 
-# vlib work
-# 
-# vlog stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:02:16 on Dec 19,2020
-# vlog -reportprogress 300 stateMac.v stateMacSCK.v master.v top.v count.v slave.v top_tb.v 
-# -- Compiling module stateMac
-# -- Compiling module stateMacSCK
-# -- Compiling module master
-# -- Compiling module top
-# -- Compiling module count
-# -- Compiling module slave
-# -- Compiling module testbench
-# 
-# Top level modules:
-# 	testbench
-# End time: 18:02:16 on Dec 19,2020, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vsim -t 1ns -voptargs="+acc" testbench
-# End time: 18:02:18 on Dec 19,2020, Elapsed time: 0:02:02
-# Errors: 0, Warnings: 0
-# vsim -t 1ns -voptargs=""+acc"" testbench 
-# Start time: 18:02:18 on Dec 19,2020
-# Loading work.testbench
-# Loading work.top
-# Loading work.master
-# Loading work.stateMacSCK
-# Loading work.slave
-# Loading work.count
-# Loading work.stateMac
-# WARNING: No extended dataflow license exists
 # 
 # add wave /testbench/clk
 # add wave /testbench/rst_n
@@ -307,5 +99,5 @@ do sim.do
 # wave zoom full
 # 0 ns
 # 42 ms
-# End time: 18:45:57 on Dec 19,2020, Elapsed time: 0:43:39
+# End time: 12:22:11 on May 18,2021, Elapsed time: 0:45:06
 # Errors: 0, Warnings: 0
