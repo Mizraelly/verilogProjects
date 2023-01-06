@@ -1,0 +1,146 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/studentWorks/verilog/verilogProjects/MIPS/lab_1
+vmux2in1
+Z1 !s110 1614509083
+!i10b 1
+!s100 InbgjffT3ViRhA<50@8QB1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IM2bXNPW0M=F=hzNnIDG9D2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1614508156
+8mux2in1.v
+Fmux2in1.v
+!i122 0
+L0 1 16
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1614509083.000000
+!s107 lab1_tb.v|mux2in1.v|signExtend.v|shiftLeftBy2.v|regFile.v|pc.v|
+Z6 !s90 -reportprogress|300|pc.v|regFile.v|shiftLeftBy2.v|signExtend.v|mux2in1.v|lab1_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+vpc
+R1
+!i10b 1
+!s100 9OBkYbNRnKLcTcbHh]9lW2
+R2
+Ic;d2nZJ3TbM=SEP@Q^lSW0
+R3
+R0
+w1614004747
+8pc.v
+Fpc.v
+!i122 0
+L0 1 15
+R4
+r1
+!s85 0
+31
+R5
+Z8 !s107 lab1_tb.v|mux2in1.v|signExtend.v|shiftLeftBy2.v|regFile.v|pc.v|
+R6
+!i113 1
+R7
+vregFile
+R1
+!i10b 1
+!s100 gVK^@>GkgKAJf5bn85M1o2
+R2
+I6oRX4n>3_<h0Pm@[aGzB]0
+R3
+R0
+w1614508095
+8regFile.v
+FregFile.v
+!i122 0
+L0 1 30
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nreg@file
+vshiftLeftBy2
+R1
+!i10b 1
+!s100 n;bYPo7;T<hDci>gbJl^Q1
+R2
+IMV9XDdE0=m?B0=T=C`E<62
+R3
+R0
+w1614004543
+8shiftLeftBy2.v
+FshiftLeftBy2.v
+!i122 0
+L0 1 9
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nshift@left@by2
+vsignExtend
+R1
+!i10b 1
+!s100 93T0;6i0lSbn?<6LIG3dg1
+R2
+I3kmeA3X<:FWKfDa062;_22
+R3
+R0
+w1614002675
+8signExtend.v
+FsignExtend.v
+!i122 0
+L0 1 10
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7
+nsign@extend
+vtestbench
+R1
+!i10b 1
+!s100 9LmPb<CliTgml6ZlKZ2W^2
+R2
+IHiB`WA]Z<012of8FbPD[Q3
+R3
+R0
+w1614508160
+8lab1_tb.v
+Flab1_tb.v
+!i122 0
+L0 2 148
+R4
+r1
+!s85 0
+31
+R5
+R8
+R6
+!i113 1
+R7

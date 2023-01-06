@@ -96,13 +96,13 @@ always @(posedge i_clk or negedge i_rst_n) begin 				//double flopping MISO
 		// reset
 		sync_reg_miso_ff <= 2'd0;
 	end else begin
-		sync_reg_miso_ff <= {sync_reg_miso_ff[0],i_miso};
+		sync_reg_miso_ff <= {sync_reg_miso_ff[1:0],i_miso};
 	end
 end
 
 always@(posedge i_clk , negedge i_rst_n)begin 				// descript shift reg MISO 
 	if(~i_rst_n) shift_reg_miso <= 8'd0;
-	else if(sck_detect) shift_reg_miso <= {shift_reg_miso[6:0],i_miso};
+	else if(sck_detect) shift_reg_miso <= {shift_reg_miso[6:0],sync_reg_miso_ff[2]};
 end
 
 always@(posedge i_clk,negedge i_rst_n)begin 						// descript shift reg MOSI

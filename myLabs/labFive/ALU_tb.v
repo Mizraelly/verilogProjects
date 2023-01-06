@@ -12,7 +12,7 @@ module testbench;
 	initial begin
 		a = 0;
 		b = 0;
-		mode = 1;
+		mode = 0;
 	end
 
 	initial begin

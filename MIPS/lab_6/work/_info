@@ -1,0 +1,391 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/studentWorks/verilog/verilogProjects/MIPS/lab_6
+vadder
+Z1 !s110 1655654395
+!i10b 1
+!s100 @d2@Em0gBCH3gz4nRZ9@e2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ic3NbmD31D?G@cnYS^Ge4E0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1623612134
+8adder.v
+Fadder.v
+!i122 4
+L0 1 9
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1655654395.000000
+!s107 lab6_tb.v|main.v|hazardDetect_unit.v|register.v|mux4in1.v|mux3in1.v|mux2in1.v|signExtend.v|regFile.v|pc.v|nextPC.v|controlUnit.v|data_memory.v|inst_memory.v|adder.v|aluControl.v|alu.v|
+Z7 !s90 -reportprogress|300|alu.v|aluControl.v|adder.v|inst_memory.v|data_memory.v|controlUnit.v|nextPC.v|pc.v|regFile.v|signExtend.v|mux2in1.v|mux3in1.v|mux4in1.v|register.v|hazardDetect_unit.v|main.v|lab6_tb.v|
+!i113 1
+Z8 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 :UTeLC[;EmGRj<QXR92mZ2
+R2
+I?LnTm[K:lP^g]Eie97>J<3
+R3
+R0
+R4
+8alu.v
+Falu.v
+!i122 4
+L0 1 34
+R5
+r1
+!s85 0
+31
+R6
+Z9 !s107 lab6_tb.v|main.v|hazardDetect_unit.v|register.v|mux4in1.v|mux3in1.v|mux2in1.v|signExtend.v|regFile.v|pc.v|nextPC.v|controlUnit.v|data_memory.v|inst_memory.v|adder.v|aluControl.v|alu.v|
+R7
+!i113 1
+R8
+valuControl
+R1
+!i10b 1
+!s100 BHg95mh764ieddXRS`1Cf3
+R2
+I[3?=3^Xh;V`>99f_MF5A12
+R3
+R0
+R4
+8aluControl.v
+FaluControl.v
+!i122 4
+L0 1 29
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+nalu@control
+vcontrolUnit
+R1
+!i10b 1
+!s100 e36Y5io_GLU`O``@NP1>c3
+R2
+IglO:A9^GdeQ7ah4c;NlI`3
+R3
+R0
+R4
+8controlUnit.v
+FcontrolUnit.v
+!i122 4
+L0 1 51
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+ncontrol@unit
+vdata_memory
+R1
+!i10b 1
+!s100 FTd7LJ^N^;=jIW0IUQnDM2
+R2
+IbGhaeKOa>Bb@ZYE6I^@cL1
+R3
+R0
+R4
+8data_memory.v
+Fdata_memory.v
+!i122 4
+L0 1 25
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vhazardDetect_unit
+R1
+!i10b 1
+!s100 bO9>W:0N`oiYYIbKE5SHd2
+R2
+IU84zBKzRm5B:h;0DmhC8M0
+R3
+R0
+R4
+8hazardDetect_unit.v
+FhazardDetect_unit.v
+!i122 4
+L0 1 44
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+nhazard@detect_unit
+vinst_memory
+R1
+!i10b 1
+!s100 IHNoZD=fL`WS_DZYfnKRX2
+R2
+IzO_=Xc<;5FlJF_2bK9FWO1
+R3
+R0
+R4
+8inst_memory.v
+Finst_memory.v
+!i122 4
+Z10 L0 1 16
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vmain
+R1
+!i10b 1
+!s100 ]ofm?8YzIjNNHY_IiVZ2F3
+R2
+IgROafb[UiJ9@WS76]o60[1
+R3
+R0
+R4
+8main.v
+Fmain.v
+!i122 4
+L0 1 511
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vmux2in1
+R1
+!i10b 1
+!s100 R@[`VC=ij4Ekm4?823oG21
+R2
+I3iBKzJ[[aCoXdCXJ59JXQ1
+R3
+R0
+R4
+8mux2in1.v
+Fmux2in1.v
+!i122 4
+R10
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vmux3in1
+R1
+!i10b 1
+!s100 l1_Z4Sh;1nS<G=WKRcj_?1
+R2
+IKD;Z=8DRBXV;?_UnSifPE1
+R3
+R0
+R4
+8mux3in1.v
+Fmux3in1.v
+!i122 4
+L0 1 19
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vmux4in1
+R1
+!i10b 1
+!s100 04H?>51UO>d3YRkj?eI=12
+R2
+IDQme=1H3@28;G^764mZW<1
+R3
+R0
+R4
+8mux4in1.v
+Fmux4in1.v
+!i122 4
+L0 1 18
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vnextPC
+R1
+!i10b 1
+!s100 XT;UJhdQZn6<TZPzO1XM91
+R2
+I6OX;dJP9XdNN1NXLkD8kR2
+R3
+R0
+R4
+8nextPC.v
+FnextPC.v
+!i122 4
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+nnext@p@c
+vpc
+R1
+!i10b 1
+!s100 ZTi=OmjQM@cJ`b>4`M@dg0
+R2
+I5YJnicB4STV@47jPe3c^n0
+R3
+R0
+R4
+8pc.v
+Fpc.v
+!i122 4
+L0 1 15
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vregFile
+R1
+!i10b 1
+!s100 9_>EcPio1DKz<EFPK?M>B0
+R2
+IIZ:1Qblb1`9mEl`_eBG=H1
+R3
+R0
+R4
+8regFile.v
+FregFile.v
+!i122 4
+L0 1 30
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+nreg@file
+vregister
+R1
+!i10b 1
+!s100 V0k4QhkVijnI0nE`k;fEA3
+R2
+ICcGUV96Amzn5j2bE_FXC]2
+R3
+R0
+R4
+8register.v
+Fregister.v
+!i122 4
+R10
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+vsignExtend
+R1
+!i10b 1
+!s100 `B>QJc9WRh6Ne[P?[fU>A3
+R2
+I==PgOVSJT[Wecj;7[FekD3
+R3
+R0
+R4
+8signExtend.v
+FsignExtend.v
+!i122 4
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8
+nsign@extend
+vtestbench
+R1
+!i10b 1
+!s100 NmBb^YllNJC<=dC3=Q6j13
+R2
+IQkTQf;je7l]O]4h6`SPmU1
+R3
+R0
+w1623942637
+8lab6_tb.v
+Flab6_tb.v
+!i122 4
+L0 2 24
+R5
+r1
+!s85 0
+31
+R6
+R9
+R7
+!i113 1
+R8

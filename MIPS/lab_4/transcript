@@ -1,0 +1,94 @@
+# Reading pref.tcl
+# do sim2.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v controlUnit.v nextPC.v pc.v regFile.v signExtend.v mux2in1.v main.v lab4_tb.v 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:49 on Mar 24,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v controlUnit.v nextPC.v pc.v regFile.v signExtend.v mux2in1.v main.v lab4_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module controlUnit
+# -- Compiling module nextPC
+# -- Compiling module pc
+# -- Compiling module regFile
+# -- Compiling module signExtend
+# -- Compiling module mux2in1
+# -- Compiling module main
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 13:05:49 on Mar 24,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 13:05:49 on Mar 24,2021
+# Loading work.testbench
+# Loading work.main
+# Loading work.mux2in1
+# Loading work.pc
+# Loading work.adder
+# Loading work.inst_memory
+# Loading work.regFile
+# Loading work.signExtend
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.controlUnit
+# Loading work.aluControl
+# Loading work.nextPC
+# 
+# 
+# add wave /testbench/clk
+# 
+#regFile
+# add wave -radix unsigned /testbench/main/regFile/i_raddr1
+# add wave -radix unsigned /testbench/main/regFile/i_raddr2
+# add wave -radix unsigned /testbench/main/regFile/i_waddr
+# add wave -radix unsigned /testbench/main/regFile/i_wdata
+# add wave -radix unsigned /testbench/main/regFile/o_rdata1
+# add wave -radix unsigned /testbench/main/regFile/o_rdata2
+# add wave -radix unsigned /testbench/main/regFile/register
+# 
+#data_memory
+# add wave -radix unsigned /testbench/main/data_memory/i_addr
+# add wave -radix unsigned /testbench/main/data_memory/i_data
+# add wave -radix unsigned /testbench/main/data_memory/data_mem
+# 
+#alu
+# add wave -radix unsigned /testbench/main/alu/i_op1
+# add wave -radix unsigned /testbench/main/alu/i_op2
+# add wave -radix unsigned /testbench/main/alu/o_result
+# add wave /testbench/main/alu/o_zf
+# 
+#Extender
+# add wave -radix unsigned /testbench/main/signExtend/o_data
+# 
+#aluControl
+# add wave /testbench/main/aluControl/i_aluOp
+# add wave -radix hexadecimal /testbench/main/aluControl/i_func
+# 
+#contolUnit
+# add wave -radix unsigned /testbench/main/controlUnit/i_op
+# 
+#PC
+# add wave -radix unsigned /testbench/main/pc/o_pc
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab4_tb.v(21)
+#    Time: 500 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab4_tb.v line 21
+# 
+# wave zoom full
+# 0 ns
+# 525 ns
+# End time: 13:19:44 on Mar 24,2021, Elapsed time: 0:13:55
+# Errors: 0, Warnings: 0

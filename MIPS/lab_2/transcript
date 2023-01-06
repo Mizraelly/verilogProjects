@@ -1,0 +1,1284 @@
+# Reading pref.tcl
+# do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:45:02 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:45:02 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 14:45:02 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst data
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbecnh/o_aluControl_aluControl
+# ** UI-Msg: (vish-4014) No objects found matching '/testbecnh/o_aluControl_aluControl'.
+# Error in macro ./sim.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/testbecnh/o_aluControl_aluControl'.
+#     while executing
+# "add wave /testbecnh/o_aluControl_aluControl"
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:45:57 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:45:57 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 14:45:58 on Mar 04,2021, Elapsed time: 0:00:56
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 14:45:58 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst data
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave /testbench/i_op1_alu
+# add wave /testbench/i_op2_alu
+# add wave /testbench/i_control_alu
+# add wave /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave /testbench/o_data_mem
+# 
+#adder
+# add wave /testbench/i_op1_adder
+# add wave /testbench/i_op2_adder
+# add wave /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(111)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 111
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:48:56 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# ** Error: (vlog-13069) lab2_tb.v(93): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) lab2_tb.v(98): near "end": syntax error, unexpected end.
+# ** Error: lab2_tb.v(104): (vlog-13205) Syntax error found in the scope following 'i_op2_alu'. Is there a missing '::'?
+# End time: 14:48:56 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim.do line 7
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v"
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:52:13 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:52:13 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 14:52:15 on Mar 04,2021, Elapsed time: 0:06:17
+# Errors: 1, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 14:52:15 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave /testbench/i_op1_alu
+# add wave /testbench/i_op2_alu
+# add wave /testbench/i_control_alu
+# add wave /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave /testbench/o_data_mem
+# 
+#adder
+# add wave /testbench/i_op1_adder
+# add wave /testbench/i_op2_adder
+# add wave /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(114)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 114
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:24 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# ** Error: (vlog-13069) lab2_tb.v(95): near "always": syntax error, unexpected always.
+# ** Error: (vlog-13069) lab2_tb.v(99): near "end": syntax error, unexpected end.
+# ** Error: lab2_tb.v(105): (vlog-13205) Syntax error found in the scope following 'i_op2_alu'. Is there a missing '::'?
+# End time: 14:58:24 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./sim.do line 7
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v"
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:55 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 14:58:55 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 14:58:57 on Mar 04,2021, Elapsed time: 0:06:42
+# Errors: 1, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 14:58:57 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave /testbench/i_op1_alu
+# add wave /testbench/i_op2_alu
+# add wave /testbench/i_control_alu
+# add wave /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave /testbench/o_data_mem
+# 
+#adder
+# add wave /testbench/i_op1_adder
+# add wave /testbench/i_op2_adder
+# add wave /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(118)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 118
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:00:05 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:00:05 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:00:09 on Mar 04,2021, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:00:09 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave /testbench/i_op1_alu
+# add wave /testbench/i_op2_alu
+# add wave /testbench/i_control_alu
+# add wave /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave /testbench/o_data_mem
+# 
+#adder
+# add wave /testbench/i_op1_adder
+# add wave /testbench/i_op2_adder
+# add wave /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:01:53 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:01:53 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:01:56 on Mar 04,2021, Elapsed time: 0:01:47
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:01:56 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave /testbench/i_op1_alu
+# add wave /testbench/i_op2_alu
+# add wave /testbench/i_control_alu
+# add wave /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave /testbench/o_data_mem
+# 
+#adder
+# add wave /testbench/i_op1_adder
+# add wave /testbench/i_op2_adder
+# add wave /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:05:06 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:05:06 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:05:08 on Mar 04,2021, Elapsed time: 0:03:12
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:05:08 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:07:31 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:07:31 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:07:35 on Mar 04,2021, Elapsed time: 0:02:27
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:07:35 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:09:28 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:09:28 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:09:30 on Mar 04,2021, Elapsed time: 0:01:55
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:09:30 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:13:17 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:13:17 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:13:19 on Mar 04,2021, Elapsed time: 0:03:49
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:13:19 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:15:07 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:15:08 on Mar 04,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:15:10 on Mar 04,2021, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:15:10 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:24:25 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:24:25 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:24:26 on Mar 04,2021, Elapsed time: 0:09:16
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:24:26 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "data_mem_init.hex". (Current address [32], address range [0:31])    : data_memory.v(12)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/data_memory
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:26:09 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:26:09 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:26:11 on Mar 04,2021, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:26:11 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# add wave -radix unsigned /testbench/data_memory/data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "data_mem_init.hex". (Current address [32], address range [0:31])    : data_memory.v(12)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/data_memory
+# ** Note: $finish    : lab2_tb.v(123)
+#    Time: 2 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 123
+# 
+# wave zoom full
+# 0 ns
+# 2100 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:25 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:29:25 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:29:26 on Mar 04,2021, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:29:26 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# add wave -radix unsigned /testbench/data_memory/data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "data_mem_init.hex". (Current address [32], address range [0:31])    : data_memory.v(12)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/data_memory
+# ** Note: $finish    : lab2_tb.v(122)
+#    Time: 500 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 122
+# 
+# wave zoom full
+# 0 ns
+# 525 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:33 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:30:33 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:30:35 on Mar 04,2021, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:30:35 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# add wave -radix unsigned /testbench/data_memory/data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "data_mem_init.hex". (Current address [32], address range [0:31])    : data_memory.v(12)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/data_memory
+# ** Note: $finish    : lab2_tb.v(122)
+#    Time: 500 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 122
+# 
+# wave zoom full
+# 0 ns
+# 525 ns
+do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qpg".
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work/_lib1_0.qtl".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_2/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:37:13 on Mar 04,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v lab2_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 15:37:13 on Mar 04,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 15:37:14 on Mar 04,2021, Elapsed time: 0:06:39
+# Errors: 0, Warnings: 1
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 15:37:14 on Mar 04,2021
+# Loading work.testbench
+# Loading work.adder
+# Loading work.data_memory
+# Loading work.aluControl
+# Loading work.alu
+# Loading work.inst_memory
+# 
+#clk
+# add wave /testbench/clk
+# 
+#inst mem
+# add wave /testbench/inst_memory/inst_mem
+# add wave /testbench/i_addr_inst_memory
+# add wave -radix hexadecimal /testbench/o_data_inst_memory
+# 
+#aluControl
+# add wave /testbench/i_aluOp_aluControl
+# add wave -radix hexadecimal /testbench/i_func_aluControl
+# add wave -radix hexadecimal /testbench/o_aluControl_aluControl
+# 
+#alu
+# add wave -radix unsigned /testbench/i_op1_alu
+# add wave -radix unsigned /testbench/i_op2_alu
+# add wave -radix hexadecimal /testbench/i_control_alu
+# add wave -radix unsigned /testbench/o_result_alu
+# add wave /testbench/o_zf_alu
+# 
+#data_mem
+# add wave /testbench/i_addr_data_mem
+# add wave -radix unsigned /testbench/i_data_mem
+# add wave /testbench/i_we_data_mem
+# add wave -radix unsigned /testbench/o_data_mem
+# add wave -radix unsigned /testbench/data_memory/data_mem
+# 
+#adder
+# add wave -radix unsigned /testbench/i_op1_adder
+# add wave -radix unsigned /testbench/i_op2_adder
+# add wave -radix unsigned /testbench/o_result_adder
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 33 of file "data_mem_init.hex". (Current address [32], address range [0:31])    : data_memory.v(12)
+#    Time: 0 ns  Iteration: 0  Instance: /testbench/data_memory
+# ** Note: $finish    : lab2_tb.v(122)
+#    Time: 500 ns  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab2_tb.v line 122
+# 
+# wave zoom full
+# 0 ns
+# 525 ns
+# End time: 15:38:49 on Mar 04,2021, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 1

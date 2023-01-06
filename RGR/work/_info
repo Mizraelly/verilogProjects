@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/studentWorks/verilog/verilogProjects/RGR
 vcount
-Z1 !s110 1621327025
+Z1 !s110 1628258474
 !i10b 1
 !s100 k5gXWROjFmgD94@^:0:m20
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -26,7 +26,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1621327025.000000
+Z6 !s108 1628258474.000000
 !s107 top_tb.v|slave.v|count.v|top.v|master.v|stateMacSCK.v|stateMac.v|
 Z7 !s90 -reportprogress|300|stateMac.v|stateMacSCK.v|master.v|top.v|count.v|slave.v|top_tb.v|
 !i113 1
@@ -34,12 +34,12 @@ Z8 tCvgOpt 0
 vmaster
 R1
 !i10b 1
-!s100 IhD0c7I:?>n1NGGVBK7aH0
+!s100 1PNO]J;hPo9mM]FPQ9Dh[3
 R2
-IVZVSlXNd=aF1C;jOHh[=e0
+I7fXF5Da@[izZ>38g0deZ^2
 R3
 R0
-R4
+w1628258464
 8master.v
 Fmaster.v
 !i122 0

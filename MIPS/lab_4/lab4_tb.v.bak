@@ -1,0 +1,22 @@
+`timescale 1ns/1ps
+module testbench;
+parameter PERIOD = 20;
+
+reg clk_t, rst_n_pc;
+
+main main (.clk(clk_t),.i_rst_n_pc(i_rst_n_pc_));
+
+//descript test for module
+//init clk 
+initial begin
+	clk_t = 0;
+	forever #(PERIOD / 2) clk_t = ~clk_t;
+end
+
+initial begin
+	i_rst_n_pc = 0;
+	#2 i_rst_n_pc = 1;
+end
+
+initial #1000 $finish;
+endmodule : testbench

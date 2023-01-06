@@ -1,0 +1,204 @@
+# Reading D:/Quartus_17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do sim.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# vlog spi_core.v tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:49 on Jan 06,2023
+# vlog -reportprogress 300 spi_core.v tb.v 
+# -- Compiling module spi_core
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:38:49 on Jan 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 12:38:50 on Jan 06,2023
+# Loading work.testbench
+# Loading work.spi_core
+# 
+# add wave -radix unsigned /testbench/o_finish
+# add wave -radix unsigned /testbench/o_start
+# add wave -radix unsigned /testbench/shift_receiver
+# 
+# add wave /testbench/i_clk
+# 
+# add wave /testbench/o_mosi
+# add wave /testbench/o_sck
+# 
+# 
+# 
+# add wave -radix unsigned /testbench/spi_core_0/state
+# 
+# add wave /testbench/spi_core_0/shift_register
+# add wave -radix unsigned /testbench/spi_core_0/cnt_data_length
+# add wave -radix unsigned /testbench/spi_core_0/cnt_delay
+# 
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : tb.v(62)
+#    Time: 5 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at tb.v line 62
+# 
+# wave zoom full
+# 0 ns
+# 5250 ns
+-do sim.do
+# invalid command name "-do"
+od sim.do
+# 0000000 071164 067141 061563 064562 072160 067440 006556 006412
+# 0000020 073012 064554 020142 067567 065562 005015 066166 063557
+# 0000040 071440 064560 061537 071157 027145 020166 061164 073056
+# 0000060 005015 071566 066551 026440 020164 067061 020163 073055
+# 0000100 070157 060564 063562 036563 025442 061541 021143 072040
+# 0000120 071545 061164 067145 064143 005015 005015 062141 020144
+# 0000140 060567 062566 026440 060562 064544 020170 067165 064563
+# 0000160 067147 062145 027440 062564 072163 062542 061556 027550
+# 0000200 057557 064546 064556 064163 005015 062141 020144 060567
+# 0000220 062566 026440 060562 064544 020170 067165 064563 067147
+# 0000240 062145 027440 062564 072163 062542 061556 027550 057557
+# 0000260 072163 071141 006564 060412 062144 073440 073141 020145
+# 0000300 071055 062141 074151 072440 071556 063551 062556 020144
+# 0000320 072057 071545 061164 067145 064143 071457 064550 072146
+# 0000340 071137 061545 064545 062566 006562 006412 060412 062144
+# 0000360 073440 073141 020145 072057 071545 061164 067145 064143
+# 0000400 064457 061537 065554 005015 005015 062141 020144 060567
+# 0000420 062566 027440 062564 072163 062542 061556 027550 057557
+# 0000440 067555 064563 005015 062141 020144 060567 062566 027440
+# 0000460 062564 072163 062542 061556 027550 057557 061563 006553
+# 0000500 006412 006412 006412 060412 062144 073440 073141 020145
+# 0000520 071055 062141 074151 072440 071556 063551 062556 020144
+# 0000540 072057 071545 061164 067145 064143 071457 064560 061537
+# 0000560 071157 057545 027460 072163 072141 006545 006412 060412
+# 0000600 062144 073440 073141 020145 072057 071545 061164 067145
+# 0000620 064143 071457 064560 061537 071157 057545 027460 064163
+# 0000640 063151 057564 062562 064547 072163 071145 005015 062141
+# 0000660 020144 060567 062566 026440 060562 064544 020170 067165
+# 0000700 064563 067147 062145 027440 062564 072163 062542 061556
+# 0000720 027550 070163 057551 067543 062562 030137 061457 072156
+# 0000740 062137 072141 057541 062554 063556 064164 005015 062141
+# 0000760 020144 060567 062566 026440 060562 064544 020170 067165
+# 0001000 064563 067147 062145 027440 062564 072163 062542 061556
+# 0001020 027550 070163 057551 067543 062562 030137 061457 072156
+# 0001040 062137 066145 074541 005015 005015 005015 067157 071142
+# 0001060 060545 020153 062562 072563 062555 005015 005015 067543
+# 0001100 063156 063551 071165 020145 060567 062566 026440 064564
+# 0001120 062555 064554 062556 067165 072151 020163 071556 005015
+# 0001140 072562 020156 060455 066154 005015 005015 060567 062566
+# 0001160 075040 067557 020155 072546 066154
+# 0001172
+do sim.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# vlog spi_core.v tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:04 on Jan 06,2023
+# vlog -reportprogress 300 spi_core.v tb.v 
+# -- Compiling module spi_core
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:40:04 on Jan 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 12:40:05 on Jan 06,2023, Elapsed time: 0:01:15
+# Errors: 1, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 12:40:05 on Jan 06,2023
+# Loading work.testbench
+# Loading work.spi_core
+# 
+# add wave -radix unsigned /testbench/o_finish
+# add wave -radix unsigned /testbench/o_start
+# add wave -radix unsigned /testbench/shift_receiver
+# 
+# add wave /testbench/i_clk
+# 
+# add wave /testbench/o_mosi
+# add wave /testbench/o_sck
+# 
+# 
+# 
+# add wave -radix unsigned /testbench/spi_core_0/state
+# 
+# add wave /testbench/spi_core_0/shift_register
+# add wave -radix unsigned /testbench/spi_core_0/cnt_data_length
+# add wave -radix unsigned /testbench/spi_core_0/cnt_delay
+# 
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : tb.v(56)
+#    Time: 5 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at tb.v line 56
+# 
+# wave zoom full
+# 0 ns
+# 5250 ns
+do sim.do
+# 
+# vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# vlog spi_core.v tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:41:31 on Jan 06,2023
+# vlog -reportprogress 300 spi_core.v tb.v 
+# -- Compiling module spi_core
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:41:31 on Jan 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# End time: 12:41:34 on Jan 06,2023, Elapsed time: 0:01:29
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 12:41:34 on Jan 06,2023
+# Loading work.testbench
+# Loading work.spi_core
+# 
+# add wave -radix unsigned /testbench/o_finish
+# add wave -radix unsigned /testbench/o_start
+# add wave -radix unsigned /testbench/shift_receiver
+# 
+# add wave /testbench/i_clk
+# 
+# add wave /testbench/o_mosi
+# add wave /testbench/o_sck
+# 
+# 
+# 
+# add wave -radix unsigned /testbench/spi_core_0/state
+# 
+# add wave /testbench/spi_core_0/shift_register
+# add wave -radix unsigned /testbench/spi_core_0/cnt_data_length
+# add wave -radix unsigned /testbench/spi_core_0/cnt_delay
+# 
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : tb.v(58)
+#    Time: 5 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at tb.v line 58
+# 
+# wave zoom full
+# 0 ns
+# 5250 ns
+# End time: 12:42:21 on Jan 06,2023, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 0

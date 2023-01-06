@@ -1,0 +1,144 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/studentWorks/verilog/verilogProjects/MIPS/lab_2
+vadder
+Z1 !s110 1614865033
+!i10b 1
+!s100 40];34?kH`G>`<Ihn>ec>0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+In]acZmMa`7n;?ENNa>4IL3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1614684901
+8adder.v
+Fadder.v
+!i122 0
+L0 1 9
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1614865033.000000
+!s107 lab2_tb.v|data_memory.v|inst_memory.v|adder.v|aluControl.v|alu.v|
+Z6 !s90 -reportprogress|300|alu.v|aluControl.v|adder.v|inst_memory.v|data_memory.v|lab2_tb.v|
+!i113 1
+Z7 tCvgOpt 0
+valu
+R1
+!i10b 1
+!s100 GaoJoTGWF]VBOL[60RzG91
+R2
+Ik1G;mnkWlQf>O8gFiUbGh1
+R3
+R0
+w1614861164
+8alu.v
+Falu.v
+!i122 0
+Z8 L0 1 24
+R4
+r1
+!s85 0
+31
+R5
+Z9 !s107 lab2_tb.v|data_memory.v|inst_memory.v|adder.v|aluControl.v|alu.v|
+R6
+!i113 1
+R7
+valuControl
+R1
+!i10b 1
+!s100 CK:M[18>GXD^4@S?TmccT0
+R2
+IIYjZm9>_zS0_kcbH]dogd0
+R3
+R0
+w1614865026
+8aluControl.v
+FaluControl.v
+!i122 0
+R8
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+nalu@control
+vdata_memory
+R1
+!i10b 1
+!s100 FTd7LJ^N^;=jIW0IUQnDM2
+R2
+IbGhaeKOa>Bb@ZYE6I^@cL1
+R3
+R0
+w1614864243
+8data_memory.v
+Fdata_memory.v
+!i122 0
+L0 1 25
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+vinst_memory
+R1
+!i10b 1
+!s100 IHNoZD=fL`WS_DZYfnKRX2
+R2
+IzO_=Xc<;5FlJF_2bK9FWO1
+R3
+R0
+w1614854974
+8inst_memory.v
+Finst_memory.v
+!i122 0
+L0 1 16
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7
+vtestbench
+R1
+!i10b 1
+!s100 Hocfo62f6d]76PKm5T:fY2
+R2
+IBSIIV>6RRelecF]fn7:U[1
+R3
+R0
+w1614864630
+8lab2_tb.v
+Flab2_tb.v
+!i122 0
+L0 2 122
+R4
+r1
+!s85 0
+31
+R5
+R9
+R6
+!i113 1
+R7

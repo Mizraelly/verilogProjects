@@ -1,0 +1,168 @@
+# Reading pref.tcl
+# do sim.do
+# 
+# if { [file exists "work"] } {
+#     vdel -all
+# }
+# Error 31: Unable to unlink file "D:/studentWorks/verilog/verilogProjects/MIPS/lab_3/work/_lib.qdb".
+# Error 133: Unable to remove directory "D:/studentWorks/verilog/verilogProjects/MIPS/lab_3/work".
+# vlib work
+# vlog  alu.v aluControl.v adder.v inst_memory.v data_memory.v controlUnit.v nextPC.v pc.v regFile.v signExtend.v mux2in1.v lab3_tb.v 
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:27:57 on Mar 15,2021
+# vlog -reportprogress 300 alu.v aluControl.v adder.v inst_memory.v data_memory.v controlUnit.v nextPC.v pc.v regFile.v signExtend.v mux2in1.v lab3_tb.v 
+# -- Compiling module alu
+# -- Compiling module aluControl
+# -- Compiling module adder
+# -- Compiling module inst_memory
+# -- Compiling module data_memory
+# -- Compiling module controlUnit
+# -- Compiling module nextPC
+# -- Compiling module pc
+# -- Compiling module regFile
+# -- Compiling module signExtend
+# -- Compiling module mux2in1
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 12:27:57 on Mar 15,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -t 1ns -voptargs="+acc" testbench
+# vsim -t 1ns -voptargs=""+acc"" testbench 
+# Start time: 12:27:57 on Mar 15,2021
+# Loading work.testbench
+# Loading work.mux2in1
+# Loading work.pc
+# Loading work.adder
+# Loading work.inst_memory
+# Loading work.regFile
+# Loading work.signExtend
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.controlUnit
+# Loading work.aluControl
+# Loading work.nextPC
+# 
+#add wave /testbench/
+#clk
+# add wave /testbench/clk
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: aleks  Hostname: DESKTOP-D82V4D8  ProcessID: 11736
+#           Attempting to use alternate WLF file "./wlft5dfqbq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5dfqbq
+# 
+#MUX MUX_NextPC_to_PC
+# add wave -radix unsigned /testbench/MUX_NextPC_to_PC/i_dat0
+# add wave -radix unsigned /testbench/MUX_NextPC_to_PC/i_dat1
+# add wave /testbench/MUX_NextPC_to_PC/i_control
+# add wave -radix unsigned /testbench/MUX_NextPC_to_PC/o_dat
+# 
+#PC
+# add wave /testbench/pc/i_rst_n
+# add wave -radix unsigned /testbench/pc/i_pc
+# add wave -radix unsigned /testbench/pc/o_pc
+# 
+#AdderPC
+# add wave -radix unsigned /testbench/adderPC/i_op1
+# add wave -radix unsigned /testbench/adderPC/i_op2
+# add wave -radix unsigned /testbench/adderPC/o_result
+# 
+#InstMem
+# add wave -radix unsigned /testbench/inst_memory/i_addr
+# add wave -radix hexadecimal /testbench/inst_memory/o_data
+# add wave -radix hexadecimal /testbench/inst_memory/inst_mem
+# 
+#MUX_InstMem_to_RegFile
+# add wave -radix unsigned /testbench/MUX_InstMem_to_RegFile/i_dat0
+# add wave -radix unsigned /testbench/MUX_InstMem_to_RegFile/i_dat1
+# add wave /testbench/MUX_InstMem_to_RegFile/i_control
+# add wave -radix unsigned /testbench/MUX_InstMem_to_RegFile/o_dat
+# 
+# 
+#regFile
+# add wave -radix unsigned /testbench/regFile/i_raddr1
+# add wave -radix unsigned /testbench/regFile/i_raddr2
+# add wave -radix unsigned /testbench/regFile/i_waddr
+# add wave -radix unsigned /testbench/regFile/i_wdata
+# add wave /testbench/regFile/i_we
+# add wave -radix unsigned /testbench/regFile/o_rdata1
+# add wave -radix unsigned /testbench/regFile/o_rdata2
+# add wave -radix unsigned /testbench/regFile/register
+# 
+#Extender
+# add wave -radix unsigned /testbench/signExtend/i_data
+# add wave /testbench/signExtend/i_en
+# add wave -radix unsigned /testbench/signExtend/o_data
+# 
+# 
+#MUX_RegFile_to_ALU
+# add wave -radix unsigned /testbench/MUX_RegFile_to_ALU/i_dat0
+# add wave -radix unsigned /testbench/MUX_RegFile_to_ALU/i_dat1
+# add wave /testbench/MUX_RegFile_to_ALU/i_control
+# add wave -radix unsigned /testbench/MUX_RegFile_to_ALU/o_dat
+# 
+#alu
+# add wave -radix unsigned /testbench/alu/i_op1
+# add wave -radix unsigned /testbench/alu/i_op2
+# add wave -radix hexadecimal /testbench/alu/i_control
+# add wave -radix unsigned /testbench/alu/o_result
+# add wave /testbench/alu/o_zf
+# 
+# 
+#data_memory
+# add wave -radix unsigned /testbench/data_memory/i_addr
+# add wave -radix unsigned /testbench/data_memory/i_data
+# add wave /testbench/data_memory/i_we
+# add wave -radix unsigned /testbench/data_memory/o_data
+# add wave -radix unsigned /testbench/data_memory/data_mem
+# 
+#MUX_DataMem_to_RegFile
+# add wave -radix unsigned /testbench/MUX_DataMem_to_RegFile/i_dat0
+# add wave -radix unsigned /testbench/MUX_DataMem_to_RegFile/i_dat1
+# add wave /testbench/MUX_DataMem_to_RegFile/i_control
+# add wave -radix unsigned /testbench/MUX_DataMem_to_RegFile/o_dat
+# 
+#contolUnit
+# add wave -radix unsigned /testbench/controlUnit/i_op
+# add wave /testbench/controlUnit/o_regDst
+# add wave /testbench/controlUnit/o_J
+# add wave /testbench/controlUnit/o_Beq
+# add wave /testbench/controlUnit/o_ExtOp
+# add wave /testbench/controlUnit/o_memToReg
+# add wave /testbench/controlUnit/o_aluOp
+# add wave /testbench/controlUnit/o_memWrite
+# add wave /testbench/controlUnit/o_memRead
+# add wave /testbench/controlUnit/o_aluSrc
+# add wave /testbench/controlUnit/o_regWrite
+# 
+# 
+#aluControl
+# add wave /testbench/aluControl/i_aluOp
+# add wave -radix hexadecimal /testbench/aluControl/i_func
+# add wave -radix hexadecimal  /testbench/aluControl/o_aluControl
+# 
+#next PC
+# add wave -radix unsigned /testbench/nextPC/i_incPC
+# add wave -radix unsigned /testbench/nextPC/i_imm26
+# add wave /testbench/nextPC/i_zero
+# add wave /testbench/nextPC/i_j
+# add wave /testbench/nextPC/i_beq
+# add wave /testbench/nextPC/o_PCSrc
+# add wave -radix unsigned /testbench/nextPC/o_addr
+# 
+# onbreak resume
+# 
+# configure wave -timelineunits ns
+# run -all
+# ** Note: $finish    : lab3_tb.v(233)
+#    Time: 1 us  Iteration: 0  Instance: /testbench
+# 1
+# Break in Module testbench at lab3_tb.v line 233
+# 
+# wave zoom full
+# 0 ns
+# 1050 ns
+# End time: 12:31:29 on Mar 15,2021, Elapsed time: 0:03:32
+# Errors: 0, Warnings: 2

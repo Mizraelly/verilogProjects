@@ -22,7 +22,7 @@ always@(*)begin
 			6'h2A: o_aluControl = SOLT;
 			6'h00: o_aluControl = SLL;
 			6'h02: o_aluControl = SRL;
-		endcase // i_func
+			endcase // i_func
 		end
 	endcase // i_aluOp
 end

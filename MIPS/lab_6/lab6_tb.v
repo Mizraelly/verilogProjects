@@ -21,5 +21,5 @@ initial begin
 	rst_n_registers = 1;
 end
 
-initial #2500 $finish;
+initial #50000 $finish;
 endmodule : testbench

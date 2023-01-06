@@ -18,5 +18,5 @@ initial begin
 	#2 rst_n_pc = 1;
 end
 
-initial #2000 $finish;
+initial #20000 $finish;
 endmodule : testbench
